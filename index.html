@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Apple Packet Price Planner</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1>Apple packet price planner</h1>
+      <h3>Apple buying data</h3>
+      <div class="container-1">
+        <div class="buying-data-container">
+          <div class="lable-input">
+            <label>Cost price for a box of apples</label>
+            <input class="input price-box" type="text" />
+          </div>
+          <div class="lable-input">
+            <label>Number of apples in the box</label>
+            <input class="input apples-in-box" type="text" />
+          </div>
+          <div class="lable-input">
+            <label>The packet size apples are sold in</label>
+            <input class="input pack-size" type="text" />
+          </div>
+          <div class="lable-input">
+            <label>Required profit %</label>
+            <input class="input required-profit" type="text" />
+          </div>
+        </div>
+        <div class="button-container">
+          <div></div>
+          <button class="calculate-btn">calculate</button>
+        </div>
+      </div>
+      <h3>Apple price calculations</h3>
+      <div class="container-2">
+        <div class="price-calculations-container">
+          <div class="lable-input">
+            <label>Number of packets</label>
+            <input class="input num-of-packs" type="text" disabled />
+          </div>
+          <div class="lable-input">
+            <label>Cost price per apple</label>
+            <input class="input price-per-apple" type="text" disabled />
+          </div>
+          <div class="lable-input">
+            <label>Cost price per packet</label>
+            <input class="input price-per-packet" type="text" disabled />
+          </div>
+          <div class="lable-input">
+            <label>Recommended packet price</label>
+            <input class="input best-price-per-packet" type="text" disabled />
+          </div>
+          <div class="button-container">
+            <div></div>
+            <button class="new-caclulations-btn">new calculations</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="functions/ApplePriceCalculate.js" charset="utf-8"></script>
+    <script src="functions/applePriceCalculateDOM.js" charset="utf-8"></script>
+  </body>
+</html>
